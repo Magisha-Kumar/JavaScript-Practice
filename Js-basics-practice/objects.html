@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+        <script>
+          /*  const products={
+                name : 'Mobile',
+                price : 1000
+            };
+
+            const product2={
+                name : 'Shirt',
+                price : 200,
+
+                rating : {
+                    stars : 4.5,     // object inside object(nested object)
+                    count : 81
+                },
+
+                fun : function fun1(){
+                    console.log('Function inside object');   // function inside object
+                }
+            };
+
+            console.log(products);
+            console.log(product2);
+
+            product2.price=200;
+            console.log(product2.name);    // dot notation
+            console.log(product2['name']);   // bracket notation
+
+        //    delete product2.name;
+            console.log(product2);
+
+            console.log(product2.rating);
+            console.log(product2.rating.stars);
+
+            product2.fun();
+
+            console.log(JSON.stringify(product2));  // JS object to JSON
+            const jsonString=JSON.stringify(product2);
+
+            console.log(JSON.parse(jsonString));  // JSON to JS object */
+
+            const obj1={
+                message : 'hello'
+            };
+
+            const obj2=obj1;  // objects are references
+            console.log(obj2.message);  // prints hello
+
+            const obj3={
+                message : 'hello'
+            };
+
+            console.log(obj1===obj3);  // prints false
+
+
+            const obj4={
+                message : 'hello',
+                name : 'hi',
+                price : 100
+            };
+
+        //    const message = obj3.message;
+            const {message}=obj4;   //  Destructing shortcut
+            const {name,price}=obj4;
+            
+            console.log(name);
+
+            const obj5 = {
+            //    price :price     // Both the lines mean the same 
+                price               //  This is called the shorthand property
+            };
+
+            console.log(price);
+
+            const obj6 = {
+                message ,              
+            /*    method : function fun() {
+                    console.log('method');
+                }   */
+
+                method() {
+                    console.log('method');  
+                }
+            };
+            
+            obj6.method();
+
+        </script>
+
+    </body>
+</html>

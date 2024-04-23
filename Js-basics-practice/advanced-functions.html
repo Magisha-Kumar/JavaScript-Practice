@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced - Functions</title>
+    </head>
+    <body>
+
+        <button onclick="" class="js-button">Add</button>
+
+        <script>
+
+            /*
+
+            const buttonElement = document.querySelector('.js-button');
+
+            buttonElement.addEventListener('click',() => {
+                console.log('click');
+            });
+
+            const eventListener =    () => {
+                console.log('click2');
+            };
+
+            buttonElement.addEventListener('click', eventListener);
+
+            buttonElement.removeEventListener('click',eventListener);
+
+            */
+
+            /*
+            
+            function greeting(){
+                console.log('hello');
+            }
+            greeting();
+
+            const function1 = function greeting(){         // Functions can be stored in a variable 
+                console.log('Hello1');                     // because functions are values
+            };
+            function1();
+
+            console.log(function1);
+            console.log(typeof function1);
+
+            const function2 = function(){
+                console.log('Hello2');           // Anonymous function -> function without name 
+            };
+            function2();
+
+            const object1={
+                num : 2,
+                fun : function(){
+                    console.log('Hello3');      // Function inside object is called method
+                }
+            };
+            object1.fun();
+
+            // passing values in functions
+
+            function display(param){
+                console.log(param);
+            }
+            display(7);
+
+            function run(param){
+                param();
+            }
+            
+            run( function (){
+                console.log('Hello4');
+            });
+
+            */
+
+            
+
+            /*
+
+            setTimeout(function() {
+                console.log('Timeout');
+            },3000);
+
+            setInterval(function() {
+                console.log('Interval');
+            },3000);
+
+            */
+
+            /*
+
+            [
+                'make dinner',
+                'wash dishes',
+                'watch youtube'
+            ].forEach((value,index) => {
+                console.log(value);
+                console.log(index);
+            });
+
+            
+            // Arrow functions
+
+            const arrowFunction = () => {
+                console.log('Hi');
+            };
+            arrowFunction();
+
+            // const oneParam = (param) => {
+            //     console.log(param);
+            // };
+
+            // Both the above and below function works the same way
+            // paranthesis () can be skipped if the function has only one parameter
+
+            const oneParam = param => {     
+                console.log(param);            
+            };
+
+            oneParam(18);
+
+            // const oneLiner = () => {
+            //     return 4 + 5 ;
+            // };
+
+            // If the function has only one line of code, it can be written in single line itself
+
+        //    const oneLiner = () => { return 4 + 5 ; }; 
+
+        // In a single line code, 'return' keyword and '{ }' can be skipped.
+
+            const oneLiner = () => 4 + 5 ;
+
+            // All the above three codes work the same way
+
+            console.log(oneLiner());
+
+            */
+
+            console.log([1,-3,5].filter((value,index) =>{
+                // if(value>=o) {
+                //     return true;
+                // }
+                // else {
+                //     return false;
+                // }
+                return value>0;   // if-else works the same as this 
+            }));
+
+            // console.log([2,4,6].map((value,index) =>{
+            //     return value*2;    
+            // }));
+
+            // Both the above and below code works the same way 
+
+            console.log([2,4,6].map(value => value*2 ));
+
+
+       </script>
+
+    </body>
+</html>
